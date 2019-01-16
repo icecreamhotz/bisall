@@ -1,7 +1,3 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -29,4 +25,154 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  background: #fbfbfb;
+}
+.profile {
+  background-attachment: fixed;
+  background-position: 50% 80% ;
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-color:whitesmoke;
+  width: 264.566929px;
+  height: 377.952756px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -200px 0 0 -125px;
+  border-radius:24px;
+  border:none;
+  transition:all .3s;
+}
+
+.profileName {
+  background:transparent;
+  border:0;
+  text-align:center;
+  font-size:35px;
+  font-weight:800;
+  color:black;
+  padding-top: 30px;
+}
+
+.card-body {
+  color:#eee;
+  margin-top:1.5em;
+}
+.avatar {
+  border-radius:50%;
+  max-width:270px;
+  transform: scale(0.95);
+  transition:all .5s;
+  cursor:pointer;
+  margin-top: -20px;
+}
+.profilePic {
+  text-align:center;
+}
+.isOnline {
+  text-align:center;
+  color:black;
+}
+.profileInfo {
+  margin-top:1em;
+  font-weight:200;
+  font-size:18px;
+  color:black;
+  text-align:center;
+  margin-top: -25px;
+}
+.actions {
+  background:transparent;
+  border:0;
+  color:black;
+  display:flex;
+  justify-content: center;
+}
+.actionFirst, .actionSecond {
+  width:50%;
+  text-align:center;
+  fill:black;
+  transform: scale(0.8);
+  transition:all .3s;
+  cursor:pointer;
+}
+
+.input-file-container {
+  position: relative;
+  width: 300px;
+  text-align:center;
+} 
+.input-file-trigger {
+  display: block;
+  padding: 14px 45px;
+  background: #39D2B4;
+  color: #fff;
+  font-size: 1em;
+  transition: all .4s;
+  cursor: pointer;
+}
+.input-file {
+  position: absolute;
+  top: 0; left: 0;
+  width: 225px;
+  opacity: 0;
+  padding: 14px 0;
+  cursor: pointer;
+}
+.input-file:hover + .input-file-trigger,
+.input-file:focus + .input-file-trigger,
+.input-file-trigger:hover,
+.input-file-trigger:focus {
+  background: #34495E;
+  color: #39D2B4;
+}
+
+.image-area {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: #333;
+}
+.image-area img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  height: auto;
+}
+.remove-image {
+display: none;
+position: absolute;
+top: -10px;
+right: -10px;
+border-radius: 10em;
+padding: 2px 6px 3px;
+text-decoration: none;
+font: 700 21px/20px sans-serif;
+background: #555;
+border: 3px solid #fff;
+color: #FFF;
+box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 2px 4px rgba(0,0,0,0.3);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+}
+.remove-image:hover {
+ background: #E54E4E;
+  padding: 3px 7px 5px;
+  top: -11px;
+right: -11px;
+}
+.remove-image:active {
+ background: #E54E4E;
+  top: -10px;
+right: -11px;
 }
